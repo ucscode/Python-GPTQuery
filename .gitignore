@@ -1,6 +1,8 @@
 /pdf/
-/packages/__pycache__/
+__pycache__/
 /main.py
 /.env
 /packages/logger.py
 /packages/extractor.py
+/output/
+/helper/
