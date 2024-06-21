@@ -26,11 +26,7 @@ chat.add_user([
 
 vision = Vision()
 
-max_token = 300
-
-# send request
-
-response = vision.query_gpt(chat, max_token)
+response = vision.query_gpt(chat, max_token=300)
 
 response.choices[0].message.content
 ```
