@@ -10,6 +10,7 @@ chat = GPTChat()
 # set initial system message
 chat.set_system_context('You are a helpful assistant')
 
+# start conversation
 chat.add_assistant('How can I help you today')
 
 chat.add_user('Well I need you to check an image for me')
@@ -21,9 +22,13 @@ chat.add_user([
     Image.open('image.png', 'r'),
 ])
 
+# initialize vision
+
 vision = Vision()
 
 max_token = 300
+
+# send request
 
 response = vision.query_gpt(chat, max_token)
 
